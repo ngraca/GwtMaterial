@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	
+	<ui:with field='res' type='gwt.material.design.client.resources.MaterialResources' />
+	
+	<ui:style>
+		.customFooter{
+			padding-left: 0px !important;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<m:MaterialTitle title="Introduction" description="We use flexbox to structure our html so that the footer is always on the bottom of the page."/>
+		<m:MaterialFooter color="blue" copyright="© 2014 Copyright Text" link="Link" addStyleNames="{style.customFooter}">
+			<m:content>
+				<m:MaterialPanel>
+					<h5 class="white-text">Footer Content</h5>
+               	 	<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</m:MaterialPanel>
+			</m:content>
+			<m:link><m:MaterialLink text="Link 1" textColor="white" icon="mdi-action-accessibility" iconPosition="left"/></m:link>
+			<m:link><m:MaterialLink text="Link 2" textColor="white" icon="mdi-action-alarm-add" iconPosition="left"/></m:link>
+			<m:link><m:MaterialLink text="Link 3" textColor="white" icon="mdi-action-android" iconPosition="left"/></m:link>
+			<m:link><m:MaterialLink text="Link 4" textColor="white" icon="mdi-action-face-unlock" iconPosition="left"/></m:link>
+		</m:MaterialFooter>
+		
+		<pre>
+<span class="tag">&lt;m:MaterialFooter</span> <span class="attr">color</span>="blue" <span class="attr">copyright</span>="© 2014 Copyright Text" <span class="attr">link</span>="Link"<span class="tag">></span>
+	<span class="tag">&lt;m:content></span>
+		<span class="tag">&lt;m:MaterialPanel></span>
+			<span class="tag">&lt;h5</span> <span class="attr">class</span>="white-text"<span class="tag">></span>Footer Content&lt;<span class="tag">/h5></span>
+			<span class="tag">&lt;p</span> <span class="attr">class</span>="grey-text text-lighten-4"<span class="tag">></span>You can use rows and columns here to organize your footer content. <span class="tag">&lt;/p></span>
+		<span class="tag">&lt;/m:MaterialPanel></span>
+	<span class="tag">&lt;/m:content></span>
+	<span class="tag">&lt;m:link>&lt;m:MaterialLink</span> <span class="attr">text</span>="Link 1" <span class="attr">textColor</span>="white" <span class="attr">icon</span>="mdi-action-accessibility" <span class="attr">iconPosition</span>="left" <span class="tag">/>&lt;/m:link></span>
+	<span class="tag">&lt;m:link>&lt;m:MaterialLink</span> <span class="attr">text</span>="Link 2" <span class="attr">textColor</span>="white" <span class="attr">icon</span>="mdi-action-alarm-add" <span class="attr">iconPosition</span>="left" <span class="tag">/>&lt;/m:link></span>
+	<span class="tag">&lt;m:link>&lt;m:MaterialLink</span> <span class="attr">text</span>="Link 3" <span class="attr">textColor</span>="white" <span class="attr">icon</span>="mdi-action-android" <span class="attr">iconPosition</span>="left" <span class="tag">/>&lt;/m:link></span>
+	<span class="tag">&lt;m:link>&lt;m:MaterialLink</span> <span class="attr">text</span>="Link 4" <span class="attr">textColor</span>="white" <span class="attr">icon</span>="mdi-action-face-unlock" <span class="attr">iconPosition</span>="left" <span class="tag">/>&lt;/m:link></span>
+<span class="tag">&lt;/m:MaterialFooter></span>
+		</pre>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 
