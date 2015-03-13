@@ -38,10 +38,6 @@ public class MaterialDatePicker extends FocusPanel{
 	
 	public static native void initDatePicker()/*-{
 		  $wnd.jQuery('.datepicker').pickadate();
-		  $wnd.jQuery('.picker__weekday-display').css("background", '#1E88E5');
-		  $wnd.jQuery('.picker__year-display').css("color", '#82B1FF');
-		  $wnd.jQuery('.picker--focused').css("color", '#1E88E5');
-		  $wnd.jQuery('.picker__day--selected').css("color", '#1E88E5');
 	}-*/;
 
 

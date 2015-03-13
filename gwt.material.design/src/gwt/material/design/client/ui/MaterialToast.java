@@ -7,7 +7,7 @@ public class MaterialToast {
 	}
 	
 	public static native void alert(String msg) /*-{
-	  $wnd.toast(msg, 4000);
+	  $wnd. toast('I am a toast!', 4000)
 	}-*/;
 	
 }

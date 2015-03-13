@@ -14,9 +14,12 @@
 			left: 0;
 			bottom: 0;
 		}
+		.loader{
+			margin: auto;
+		}
 	</ui:style>
 	<g:HTMLPanel addStyleNames="{style.panel} valign-wrapper">
-		<div class="preloader-wrapper active">
+		<div class="preloader-wrapper active {style.loader}">
 			<div class="spinner-layer spinner-blue">
 				<div class="circle-clipper left">
 					<div class="circle"></div>
