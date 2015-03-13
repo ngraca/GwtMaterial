@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:c="urn:import:gwt.material.design.client.custom">
+	<ui:style>
+		.name{
+			width: 60px;
+			font-size: 0.9em;
+			padding-top: 5px;
+		}
+	</ui:style>
+	<c:UnorderedList ui:field="pager" addStyleNames="pagination">
+		<c:ListItem><m:MaterialLink ui:field="prev" icon="mdi-navigation-chevron-left"/></c:ListItem>
+		<c:ListItem><m:MaterialLink ui:field="lblName" addStyleNames="{style.name}"/></c:ListItem>
+		<c:ListItem><m:MaterialLink ui:field="next" icon="mdi-navigation-chevron-right"/></c:ListItem>
+	</c:UnorderedList>
+</ui:UiBinder> 

@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+	
+	<ui:style>
+		.dropLabel{
+			position: absolute;
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 0;
+			transition: 400ms all;
+			background: rgba(255, 255, 255, 0.8);
+		}
+		.label{
+			width: 300px;
+			height: 300px;
+			background: #2196F3;
+			border-radius: 100%;
+			-webkit-border-radius: 100%;
+			-moz-border-radius: 100%;
+			font-size: 1.5em;
+			border: 15px solid #F0F8FF;
+		}
+		.icon{
+			font-size: 3em;
+		}
+	
+	</ui:style>
+	<g:HTMLPanel ui:field="panel" >
+		<g:FocusPanel ui:field="dropArea" addStyleNames="{style.dropLabel} valign-wrapper">
+			<g:HTMLPanel addStyleNames="blue white-text {style.label} valign-wrapper">
+				<i class="mdi-content-inbox {style.icon}"  />
+				<g:Label text="Drop Files Here"/>
+			</g:HTMLPanel>
+		</g:FocusPanel>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

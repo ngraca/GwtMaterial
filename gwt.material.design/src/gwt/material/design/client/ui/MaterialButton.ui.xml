@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:gwt.material.design.client.custom">
+	<ui:style>
+		.label{
+			display: inline;
+			vertical-align: top;
+		}
+		.icon{
+			display: inline;
+			vertical-align: top;
+		}
+		.panel{
+			display: inline-block;
+			vertical-align: middle;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="panel" addStyleNames="{style.panel}">
+		<c:CustomButton ui:field="button">
+			<c:CustomIcon ui:field="iconElem" addStyleNames="{style.icon}"/>
+			<g:Label ui:field="label" addStyleNames="{style.label}"/>
+		</c:CustomButton>
+		
+		<c:CustomAnchor ui:field="anchor" />
+	</g:HTMLPanel>
+</ui:UiBinder> 

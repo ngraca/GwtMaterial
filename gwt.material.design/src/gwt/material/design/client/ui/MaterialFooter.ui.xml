@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:c="urn:import:gwt.material.design.client.custom">
+	<ui:style>
+
+	</ui:style>
+	<c:CustomFooter ui:field="footerPanel" addStyleNames="page-footer">
+		<m:MaterialPanel addStyleNames="container">
+			<m:MaterialRow addStyleNames="row">
+              	<m:MaterialColumn ui:field="footerContent" grid="l6 s12" />
+              	<m:MaterialColumn grid="l4 offset-l2 s12">
+              		<h5 class="white-text"><g:Label ui:field="lblLinkTitle" /></h5>
+	                <c:UnorderedList ui:field="footerLinkList"/> 
+              	</m:MaterialColumn>
+             </m:MaterialRow>
+		</m:MaterialPanel>
+		<m:MaterialPanel addStyleNames="footer-copyright">
+	    	<m:MaterialPanel addStyleNames="container">
+	           	<g:Label ui:field="lblCopyright" />
+	        </m:MaterialPanel>
+		</m:MaterialPanel>
+		
+	</c:CustomFooter>	
+</ui:UiBinder> 
