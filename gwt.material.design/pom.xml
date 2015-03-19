@@ -29,11 +29,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.gwt</groupId>
-            <artifactId>gwt-elemental</artifactId>
-            <version>${gwtversion}</version>
-        </dependency>
-        <dependency>
             <groupId>org.moxieapps.gwt</groupId>
             <artifactId>org.moxieapps.gwt.uploader</artifactId>
             <version>${org.moxieapps.fileupload.version}</version>
