@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="GwtMaterial1">
+  <!-- Inherit our applications main module.                      -->
+  <inherits name='gwt.material.design.demo.GwtMaterial1' />
+
+  <!-- Specify the path to any remote services.                   -->
+  <servlet path="/GwtMaterial1/greet" class="gwt.material.design.demo.server.GreetingServiceImpl" />
+
+</module>
